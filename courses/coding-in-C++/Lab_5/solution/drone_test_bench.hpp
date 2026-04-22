@@ -2,6 +2,7 @@
 #define DRONE_TEST_BENCH_HPP
 
 #include <iostream>
+#include <string>
 
 template <typename T>
 void swap(T &firstValue, T &secondValue)
@@ -50,6 +51,13 @@ T min(T frame[], int size)
         }
     }
     return minValue;
+}
+
+template <typename T, typename U>
+void composeTags(std::string label1, T value1, std::string label2, U value2)
+{
+
+    std::cout << label1 << ": " << value1 << " | " << label2 << ": " << value2 << '\n';
 }
 
 #endif
